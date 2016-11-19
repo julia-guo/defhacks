@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 
 import android.os.Build;
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
@@ -332,7 +333,8 @@ public class doglogin extends AppCompatActivity implements LoaderCallbacks<Curso
             showProgress(false);
 
             if (success) {
-                finish();
+                Intent intent = new Intent(doglogin.this, finddog.class);
+                startActivity(intent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
