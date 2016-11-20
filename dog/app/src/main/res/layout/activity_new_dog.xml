@@ -5,85 +5,88 @@
     android:orientation="vertical"
     android:isScrollContainer="false"
     android:background="@drawable/dogbg2"
+    android:padding="16dp"
     android:weightSum="1">
     <LinearLayout
         android:id="@+id/email_login_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <TextView
-        android:text="Add Your Doggo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:padding="4dp"
-        android:textStyle="bold"
-        android:background="#ffffff"
-        android:textSize="24dp"
-        android:layout_weight="2.32" />
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
         android:inputType="textPersonName"
         android:hint="Doggy Name"
-        android:textAlignment="center"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_weight="2.32" />
+        android:id="@+id/editText" />
 
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="#ffffff"
         android:hint="Doggy Breed"
-        android:textAlignment="center"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_weight="2.32" />
+        android:id="@+id/editText2"/>
 
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
         android:inputType="textPersonName"
         android:hint="Latitude of Location"
-        android:textAlignment="center"
-        android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_weight="2.32" />
+        android:id="@+id/editText3" />
 
+</android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#ffffff"
         android:inputType="textPersonName"
         android:hint="Longitude of Location"
-        android:textAlignment="center"
-        android:ems="10"
-        android:id="@+id/editText4"
-        android:layout_weight="2.32" />
+        android:id="@+id/editText4"/>
 
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
+        android:textColor="#ffffff"
         android:hint="Time Period Available for Petting"
-        android:textAlignment="center"
-        android:ems="10"
-        android:id="@+id/editText5"
-        android:layout_weight="2.32" />
-
+        android:id="@+id/editText5"/>
+    </android.support.design.widget.TextInputLayout>
     <Button
-        android:text="Submit"
+        android:text="add/update your doggo!"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_weight="2.32" />
+        android:id="@+id/button3"/>
 
 </LinearLayout>
 </LinearLayout>

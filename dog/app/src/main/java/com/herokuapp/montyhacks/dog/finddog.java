@@ -77,8 +77,10 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
                 .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.7449719, -73.9851947)).title("Name: Sir Calvin").snippet("Breed: Beagle | Time Available: 10:00am to 12:30pm"));
         mMap.addMarker(new MarkerOptions().position(new LatLng(40.7458474, -73.9841051)).title("Name: Mr. Matthew").snippet("Breed: Husky | Time Available: 11:00am to 12:00pm"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7449719, -73.9851947)).title("Name: Sir Calvin").snippet("Breed: Beagle | Time Available: 10:00am to 12:30pm"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7458474, -73.9841051)).title("Name: Mr. Matthew").snippet("Breed: Husky | Time Available: 11:00am to 12:00pm"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.751288, -73.985215)).title("Name: Lily").snippet("Breed: Black Lab | Time Available: 10:45am to 11:45am"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.742185, -73.988240)).title("Name: Ruby").snippet("Breed: Shiba | Time Available: 11:05am to 12:00am"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.738137, -73.986330)).title("Name: Charlie").snippet("Breed: Corgi | Time Available: 11:00am to 11:35am"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.742185, -73.988240)).title("Name: Biscuit").snippet("Breed: Dachshund | Time Available: 10:50am to 11:50am"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));
         mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) );
         LatLng addLocation = new LatLng(lat, longi);
