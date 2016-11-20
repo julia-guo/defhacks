@@ -16,7 +16,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class finddog extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-<<<<<<< HEAD
+
     public Button btnNewDog;
 
     public void init()
@@ -34,8 +34,6 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
         });
     }
 
-=======
->>>>>>> 5be5a86c82525ff994361348333d719ca54d2b52
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
