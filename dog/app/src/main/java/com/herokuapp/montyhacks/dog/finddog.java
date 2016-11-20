@@ -13,7 +13,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class finddog extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +23,6 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
         mapFragment.getMapAsync(this);
     }
 
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -34,12 +32,13 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng mylocation = new LatLng(-34, 151);
+        LatLng mylocation = new LatLng(30, 30);
         mMap.addMarker(new MarkerOptions().position(mylocation).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));
     }
