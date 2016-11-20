@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -14,6 +15,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 public class finddog extends FragmentActivity implements OnMapReadyCallback {
+
+    String namee;
+    String breed;
+    double lat;
+    double longi;
+    String time;
 
     private GoogleMap mMap;
 
@@ -43,6 +50,13 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         init();
+
+        Intent bck = getIntent();
+        namee = bck.getStringExtra("dogNamee");
+        breed = bck.getStringExtra("dogBreed");
+        lat = bck.getDoubleExtra("dogLat", 0);
+        longi = bck.getDoubleExtra("dogLongi", 0);
+        time = bck.getStringExtra("dogTime");
     }
 
     /**
@@ -58,13 +72,22 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
-        // Add a marker in Sydney and move the camera
-        LatLng mylocation = new LatLng(30, 30);
-        mMap.addMarker(new MarkerOptions().position(mylocation).title("Marker in Sydney"));
+        LatLng mylocation = new LatLng(40.7446830, -73.9848740);
+        mMap.addMarker(new MarkerOptions().position(mylocation).title("My location").icon(BitmapDescriptorFactory
+                .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7449719, -73.9851947)).title("Name: Sir Calvin").snippet("Breed: Beagle | Time Available: 10:00am to 12:30pm"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7458474, -73.9841051)).title("Name: Mr. Matthew").snippet("Breed: Husky | Time Available: 11:00am to 12:00pm"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7449719, -73.9851947)).title("Name: Sir Calvin").snippet("Breed: Beagle | Time Available: 10:00am to 12:30pm"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(40.7458474, -73.9841051)).title("Name: Mr. Matthew").snippet("Breed: Husky | Time Available: 11:00am to 12:00pm"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));
+        mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) );
+        LatLng addLocation = new LatLng(lat, longi);
+        mMap.addMarker(new MarkerOptions().position(addLocation).title("Name: " + namee).snippet("Breed: " + breed + "| Time Available: " + time));
     }
 
+    public void InfoWindowAdapter() {
+
+    }
 
 
 }

@@ -49,7 +49,7 @@ public class doglogin extends AppCompatActivity implements LoaderCallbacks<Curso
      * TODO: remove after connecting to a real authentication system.
      */
     private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"
+            "foo@example.com:hello", "bar@example.com:world","julia.z.guo@gmail.com:poopoo"
     };
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
