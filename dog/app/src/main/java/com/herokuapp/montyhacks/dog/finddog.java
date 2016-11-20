@@ -82,7 +82,7 @@ public class finddog extends FragmentActivity implements OnMapReadyCallback {
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));
         mMap.animateCamera( CameraUpdateFactory.zoomTo( 17.0f ) );
         LatLng addLocation = new LatLng(lat, longi);
-        mMap.addMarker(new MarkerOptions().position(addLocation).title("Name: " + namee).snippet("Breed: " + breed + "| Time Available: " + time));
+        mMap.addMarker(new MarkerOptions().position(addLocation).title("Name: " + namee).snippet("Breed: " + breed + " | Time Available: " + time));
     }
 
     public void InfoWindowAdapter() {
