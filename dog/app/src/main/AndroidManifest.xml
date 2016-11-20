@@ -43,7 +43,11 @@
 
         <activity
             android:name=".finddog"
-            android:label="@string/title_activity_finddog"></activity>
+            android:label="@string/title_activity_finddog" />
+        <activity
+            android:name=".newDog"
+            android:label="@string/title_activity_new_dog"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

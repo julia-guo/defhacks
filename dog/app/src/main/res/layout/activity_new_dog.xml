@@ -1,0 +1,56 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Add A New Doggo"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:layout_weight="2.32" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Doggy Name"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_weight="2.32" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Doggy Breed"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="2.32" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Doggy Location"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_weight="2.32" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_weight="2.32" />
+
+
+</LinearLayout>
